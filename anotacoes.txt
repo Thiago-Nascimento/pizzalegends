@@ -13,3 +13,13 @@ As sequencias dos frames de animações serão identificadas por keys Ex.: idleD
 
 Animation frame é qual frame da sequencia de animação será exibido
 
+
+----- Parte 3 -----
+
+Ao renderizar o mapa, dividimos ele em camadas (Layers), camada de baixo contem o chao, camada de cima contem coisas que estarão acima dos characters
+
+JS: É possível criar propriedades no objeto window -> window.propriedadeNova = "Nova propriedade"
+
+Mapas e Game loop
+
+Definição requestAnimationframe -> https://developer.mozilla.org/en-US/docs/Web/API/window/requestAnimationFrame
