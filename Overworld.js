@@ -13,42 +13,23 @@ class Overworld {
             this.ctx.drawImage(image, 0, 0)
         }
 
+        // Adicionando os game objects
+        const hero = new GameObject({
+            x: 5,
+            y: 6,
+            
+        })
 
-        const x = 5
-        const y = 6
+        const npc1 = new GameObject({
+            x: 7,
+            y: 9,
+            src: "/images/characters/people/npc1.png"
+        })
 
-        const shadow = new Image()
-        shadow.src = "/images/characters/shadow.png"
+        setTimeout(() => {
+            hero.sprite.draw(this.ctx);
+            npc1.sprite.draw(this.ctx);
+        }, 200)
 
-        shadow.onload = () => {
-            this.ctx.drawImage(
-                shadow,   // Objeto da imagem
-                0,  // x de inicio do corte (crop)
-                0,  // y de inicio do corte (crop)
-                32, // largura de corte
-                32, // altura de corte
-                x * 16 - 8,  // coordenada x
-                y * 16 - 18,  // coordenada y
-                32, // largura à desenhar
-                32  // altura à desenhar;
-            )
-        }
-
-        const hero = new Image();
-        hero.src = "/images/characters/people/hero.png"
-        
-        hero.onload = () => {
-            this.ctx.drawImage(
-                hero,   // Objeto da imagem
-                0,  // x de inicio do corte (crop)
-                0,  // y de inicio do corte (crop)
-                32, // largura de corte
-                32, // altura de corte
-                x * 16 - 8,  // coordenada x
-                y * 16 - 18,  // coordenada y
-                32, // largura à desenhar
-                32  // altura à desenhar;
-            )
-        }
     }
 }

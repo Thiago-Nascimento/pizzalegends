@@ -1,4 +1,15 @@
+----- Parte 1 -----
+
 Padrão de projeto - Game Object
 
 Para desenhar uma imagem no canvas é necessário carrega-la primeiro como um objeto da classe Image, determinar o src, e assim que ela carregar, chamar o método ctx.drawImage(image, x, y)
+
+O processo de cropping vai depender do sprite utilizado, dá para medir usando o Aseprite
+
+
+----- Parte 2 -----
+
+As sequencias dos frames de animações serão identificadas por keys Ex.: idleDown [0,0] - x do spritesheet e y do spritesheet
+
+Animation frame é qual frame da sequencia de animação será exibido
 
