@@ -26,3 +26,10 @@ Definição requestAnimationframe -> https://developer.mozilla.org/en-US/docs/We
 
 
 ----- Parte 4 -----
+
+----- Parte 5 -----
+
+----- Parte 6 -----
+
+Explicação da camera
+https://www.youtube.com/watch?v=928rjpX3Axg
