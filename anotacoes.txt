@@ -23,3 +23,6 @@ JS: É possível criar propriedades no objeto window -> window.propriedadeNova =
 Mapas e Game loop
 
 Definição requestAnimationframe -> https://developer.mozilla.org/en-US/docs/Web/API/window/requestAnimationFrame
+
+
+----- Parte 4 -----

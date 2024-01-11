@@ -16,7 +16,9 @@ class Overworld {
 
             // Desenha os GameObjects - Utiliza o Object.values pois não é um array, é um objeto, transforma em array as propriedades de um objeto
             Object.values(this.map.gameObjects).forEach(object => {
-                object.x += 0.03
+                object.update({
+                    arrow: this.directionInput.direction
+                })
                 object.sprite.draw(this.ctx)
             })
 
@@ -32,7 +34,11 @@ class Overworld {
     }
 
     init() {
-        this.map = new OverworldMap(window.OverworldMaps.Kitchen)
+        this.map = new OverworldMap(window.OverworldMaps.DemoRoom)
+
+        this.directionInput = new DirectionInput()
+        this.directionInput.init()
+
         this.startGameLoop()
 
     }
